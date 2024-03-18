@@ -23,3 +23,10 @@ country_code[c(1,3)]
 country_code[seq(1,3)]
 country_code[1:3]
 country_code["India"]
+
+#vector arithmetic
+library(dslabs)
+data("murders")
+avrg = murders$total/murders$population
+murders$state[order(avrg,decreasing = TRUE)]
+murders$state[which.max(avrg)]

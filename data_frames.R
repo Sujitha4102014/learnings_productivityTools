@@ -19,3 +19,10 @@ levels(murders$region)
 print(murders$region)
 colnames(murders)
 rownames(murders)
+
+#vector coercion
+x <- c( 1, "2", 3)
+class(x)
+x<- as.numeric(x)
+class(x)
+
